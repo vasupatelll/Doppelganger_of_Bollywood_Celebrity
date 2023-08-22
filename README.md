@@ -28,3 +28,6 @@ To recommend the top 5 nearest images similar to the input image, I employ the N
 - <b>Image Search and Tagging:</b> With a large image dataset, multi-national companies often struggle with efficient image search and categorization. The project's recommendation system can aid in searching for visually similar images, making it easier to find specific images and tag them accordingly. This streamlines the image management process.
 
 - <b>Product Recommendation:</b> In e-commerce companies, the project's recommendation system can be used to recommend visually similar products to customers. By inputting an image of a product, the system can suggest other visually similar products, thereby increasing cross-selling and upselling opportunities.
+
+## 📜 LICENSE
+[MIT](LICENSE)
