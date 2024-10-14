@@ -1,33 +1,27 @@
 ## 📌 Project Description:
 
-This project is aimed at developing a deep learning system that can detect and recognize people who look identical to Bollywood actors. 
-It will use facial features as the basis of comparison for detecting similar features between two people. 
-This system could be used in various applications such as security systems, entertainment platforms, etc., 
-where it would help identify individuals with similar facial features to famous personalities. 
-
-The development process of this project involves several steps including image cleaning and preparation, model training and testing, 
-deployment on the streamlit, and integration into existing systems or applications 
+This project involves building a deep learning model that can identify and classify Bollywood lookalikes. It will use the facial features to compare and identify whether it is two persons. This new approach could have numerous uses, ranging from security to entertainment with possibilities for identifying people matching a certain face type as that of particular celebrities. Phases of the Development ProcessImage Cleaning and PreparationModel Training & TestingDeployment on StreamlitIntegration into existing systems or applications. 
 
 ## ⚙️Functionality :
-- In this project, I employ the state-of-the-art VGGface model, which is a powerful deep convolutional neural network specifically designed for face recognition tasks. By utilizing this model, I can extract high-level facial features from the image dataset. The VGGface model is known for its ability to capture intricate details and unique facial characteristics with precision.
+- I use here VGGface model, which is the most capable deep convolutional neural network for face recognition. Using this model, I am able to forecast the original image data from high-rated facial features. About vggface The VGGFace model is the most accurate precision, it can detect details very fine in face.
 
-- Once the features are extracted using the VGGface model, I save them into a pickle file. This file format allows for efficient storage and retrieval of the features without having to recompute them every time. By saving the features in a pickle file, I can reduce computation time and ensure quick access to the necessary information.
+- I then save these features into a pickle file after feature extraction from the VGGface model. In this way, the properties can be stored and retrieved fairly fast without needing to calculate them on-the-fly every time. Since I have made Pickle file of features, this will help me to set the things in motion and not wait for long executing time.
 
 ## <b>Recommendation System :</b>
-To recommend the top 5 nearest images similar to the input image, I employ the NearestNeighbour algorithm along with cosine_similarity in my model. Here's how the recommendation system works:
+I am using cosine_similarity along with NearestNeighbour algorithm in my model to recommend top 5 nearest images that are similar to the input image. How the recommendation system works:
 
-- I compute the cosine similarity between the feature vectors extracted from the image dataset and the input image. Cosine similarity measures the angle between two vectors and provides a score that represents their similarity. A higher score indicates a greater similarity between the feature vectors.
-
-- By utilizing the NearestNeighbour algorithm, I identify the images that have the highest cosine similarity scores. This algorithm helps me find the nearest neighbors based on the calculated cosine similarity.
-
-- Using the sorted list of images based on the cosine similarity scores, I present the top 5 nearest images to the user as recommendations. These images are deemed the most similar to the input image based on their feature vectors, and are thus likely to share similar characteristics and visual patterns.
+- I get the cosine similarity using feature vectors extracted from an image dataset and input images. The cosine similarity measures the orientation (that is, frequency of non-zero elements in two vectors) and the magnitude of difference between each element. The more the value its higher is,it signifies that feature vectors are very similar.
+  
+- Using the NearestNeighbour algorithm, I find out which are those images that have maximum cosine similarity scores. I am then using this algorithm, with which I get the closest neighbors on cosine similarity.
+  
+- I display the top 5 most similar images as recommendations to users with pictures of certain classes based on their cosine similarity scores in a sorted list. These images are detected as the most similar to the input image in terms of feature vectors and consequently consist common characteristics, probably visual patterns as such.
 
 ## <b>Application in Multi-National Companies :</b>
-- <b>Content Curation for Marketing:</b> Companies can utilize the recommendation system to curate image content for marketing purposes. By inputting an image related to their brand or product, the system can recommend visually similar images that can be used for marketing campaigns, brand promotion, and advertising.
+- <b>Content Curation for Marketing:</b> Brands could benefit by selecting image content for the purpose of marketing from their recommendation system. It allow the user to seed an image associated with their brand or product, and matches it other visual images that can be used in marketing campaigns.
 
 - <b>Image Search and Tagging:</b> With a large image dataset, multi-national companies often struggle with efficient image search and categorization. The project's recommendation system can aid in searching for visually similar images, making it easier to find specific images and tag them accordingly. This streamlines the image management process.
 
-- <b>Product Recommendation:</b> In e-commerce companies, the project's recommendation system can be used to recommend visually similar products to customers. By inputting an image of a product, the system can suggest other visually similar products, thereby increasing cross-selling and upselling opportunities.
+- <b>Product Recommendation:</b> In e-commerce companies, typically have large image datasets, and will often struggle with trying to effectively search for images or categorize the data. A recommendation system of the project helps in finding visually similar images which help you to locate a specific image and categorize better. This helps to simplify the image management process.
 
 ## 📜 LICENSE
 [MIT](LICENSE)
