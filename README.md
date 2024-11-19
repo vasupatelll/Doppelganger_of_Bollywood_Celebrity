@@ -7,7 +7,7 @@ This project involves building a deep learning model that can identify and class
 
 - I then save these features into a pickle file after feature extraction from the VGGface model. In this way, the properties can be stored and retrieved fairly fast without needing to calculate them on-the-fly every time. Since I have made Pickle file of features, this will help me to set the things in motion and not wait for long executing time.
 
-## <b>Recommendation System :</b>
+## 💡 Recommendation System :
 I am using cosine_similarity along with NearestNeighbour algorithm in my model to recommend top 5 nearest images that are similar to the input image. How the recommendation system works:
 
 - I get the cosine similarity using feature vectors extracted from an image dataset and input images. The cosine similarity measures the orientation (that is, frequency of non-zero elements in two vectors) and the magnitude of difference between each element. The more the value its higher is,it signifies that feature vectors are very similar.
@@ -16,7 +16,7 @@ I am using cosine_similarity along with NearestNeighbour algorithm in my model t
   
 - I display the top 5 most similar images as recommendations to users with pictures of certain classes based on their cosine similarity scores in a sorted list. These images are detected as the most similar to the input image in terms of feature vectors and consequently consist common characteristics, probably visual patterns as such.
 
-## <b>Application in Multi-National Companies :</b>
+## 📝 Application in Multi-National Companies :
 - <b>Content Curation for Marketing:</b> Brands could benefit by selecting image content for the purpose of marketing from their recommendation system. It allow the user to seed an image associated with their brand or product, and matches it other visual images that can be used in marketing campaigns.
 
 - <b>Image Search and Tagging:</b> With a large image dataset, multi-national companies often struggle with efficient image search and categorization. The project's recommendation system can aid in searching for visually similar images, making it easier to find specific images and tag them accordingly. This streamlines the image management process.
